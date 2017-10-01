@@ -11,7 +11,7 @@ use Sylius\Component\User\Model\UserAwareInterface;
 /**
  * WishlistInterface
  */
-interface WishlistInterface extends ResourceInterface, UserAwareInterface, TimestampableInterface
+interface WishlistInterface extends ResourceInterface, UserAwareInterface
 {
     /**
      * @return int
