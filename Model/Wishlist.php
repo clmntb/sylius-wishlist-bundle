@@ -8,6 +8,7 @@ use Sylius\Component\Core\Model\ShopUserInterface;
 use Sylius\Component\Product\Model\ProductVariantInterface;
 use Sylius\Component\User\Model\UserInterface;
 
+
 class Wishlist implements WishlistInterface
 {
     use Timestampable;
@@ -146,7 +147,7 @@ class Wishlist implements WishlistInterface
     /**
      * @return ShopUserInterface
      */
-    public function getUser()
+    public function getUser(): ?UserInterface
     {
         return $this->user;
     }
@@ -156,7 +157,7 @@ class Wishlist implements WishlistInterface
      *
      * @return Wishlist
      */
-    public function setUser(UserInterface $user = null)
+    public function setUser(?UserInterface $user = null)
     {
         $this->user = $user;
 
