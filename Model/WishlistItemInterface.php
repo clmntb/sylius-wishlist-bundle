@@ -9,7 +9,7 @@ use Sylius\Component\Resource\Model\ResourceInterface;
 use Sylius\Component\Resource\Model\TimestampableInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
-interface WishlistItemInterface extends ResourceInterface, TimestampableInterface
+interface WishlistItemInterface extends ResourceInterface
 {
     /**
      * @return WishlistInterface
